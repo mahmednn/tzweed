@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>تزويد | Tzweed — التجارة الإلكترونية B2B</title>
+<meta name="description" content="تزويد — منصة تجارة إلكترونية بين الشركات B2B لقطاع السلع الاستهلاكية في ليبيا. Tzweed B2B e‑commerce platform for the Libyan consumer‑goods sector.">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=Cairo:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand" aria-label="تزويد Tzweed">
+      <img src="assets/logo.png" alt="تزويد Tzweed" class="brand-logo">
+    </a>
+    <nav class="nav-links" aria-label="التنقل الرئيسي">
+      <a href="#features" data-i18n="nav.features">لماذا تزويد</a>
+      <a href="#apps" data-i18n="nav.apps">تطبيقاتنا</a>
+      <a href="#about" data-i18n="nav.about">من نحن</a>
+      <a href="#categories" data-i18n="nav.categories">الأقسام</a>
+      <a href="#contact" data-i18n="nav.contact">تواصل معنا</a>
+    </nav>
+    <div class="nav-cta">
+      <button id="langToggle" class="lang-toggle" aria-label="Switch language">EN</button>
+      <a href="#contact" class="btn btn-primary" data-i18n="nav.start">ابدأ الآن</a>
+      <button class="nav-toggle" aria-label="القائمة"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy reveal">
+      <span class="eyebrow" data-i18n="hero.eyebrow">منصة التجارة الإلكترونية بين الشركات B2B</span>
+      <h1 data-i18n="hero.title">منصة <span class="hl">تزويد</span> للتجارة الإلكترونية<br>نربط سلسلة التوريد في السوق الليبي</h1>
+      <p class="lead" data-i18n="hero.lead">شركة تزويد للتجارة الإلكترونية (Tzweed) شركة تقنية وتجارية متخصصة في تطوير حلول التجارة الإلكترونية بين الشركات (B2B)، مع تركيز خاص على قطاع السلع الاستهلاكية في السوق الليبي. نوفّر منصة رقمية متكاملة تربط الموردين والمستوردين والموزعين وتجار الجملة والتجزئة والمطاعم والمنشآت التجارية، وتسهّل عرض المنتجات وطلبها وشراءها وإدارة عمليات التوريد والتوزيع بسرعة وتنظيم وكفاءة.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary"><span data-i18n="hero.cta1">اطلب عرضاً توضيحياً</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#apps" class="btn btn-ghost" data-i18n="hero.cta2">تطبيقاتنا</a>
+      </div>
+      <div class="hero-badges">
+        <div class="hero-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 3h5v5M21 3l-8 8M8 21H3v-5M3 21l8-8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span data-i18n="hero.badge1">حلول B2B متكاملة</span>
+        </div>
+        <div class="hero-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v5H4zM4 13h16v7H4z" stroke-linejoin="round"/><path d="M7 6.5h2M7 16h5" stroke-linecap="round"/></svg>
+          <span data-i18n="hero.badge2">كتالوجات رقمية</span>
+        </div>
+        <div class="hero-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h11v8H3zM14 10h4l3 3v2h-7z" stroke-linejoin="round"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg>
+          <span data-i18n="hero.badge3">إدارة التوريد والتوزيع</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal" data-d="2">
+      <div class="hero-blob"></div>
+      <div class="hero-float f1">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9"/></svg>
+        <span data-i18n="hero.float1">تم تأكيد الطلب</span>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-top">
+          <span class="hc-title" data-i18n="hero.card.title">طلباتي الأخيرة</span>
+          <span class="dot"></span>
+        </div>
+        <div class="hc-row">
+          <span class="hc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2l1.5 3h9L18 2M4 7h16l-1.4 10.2A2 2 0 0 1 16.6 19H7.4a2 2 0 0 1-2-1.8L4 7z" stroke-linejoin="round"/></svg></span>
+          <div><b data-i18n="hero.card.r1">جهاز إلكتروني</b><span data-i18n="hero.card.r1s">قيد المعالجة</span></div>
+          <span class="hc-amt" dir="ltr">450 د.ل</span>
+        </div>
+        <div class="hc-row">
+          <span class="hc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h11v8H3zM14 10h4l3 3v2h-7z" stroke-linejoin="round"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg></span>
+          <div><b data-i18n="hero.card.r2">مستلزمات منزلية</b><span data-i18n="hero.card.r2s">خرج للتوصيل</span></div>
+          <span class="hc-amt" dir="ltr">120 د.ل</span>
+        </div>
+        <div class="hc-row" style="margin-bottom:0">
+          <span class="hc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9"/></svg></span>
+          <div><b data-i18n="hero.card.r3">ملابس وأزياء</b><span data-i18n="hero.card.r3s">تم التوصيل</span></div>
+          <span class="hc-amt" dir="ltr">89 د.ل</span>
+        </div>
+      </div>
+      <div class="hero-float f2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h11v8H3zM14 10h4l3 3v2h-7z" stroke-linejoin="round"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg>
+        <span data-i18n="hero.float2">توصيل خلال 48 ساعة</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST BAR ============ -->
+<div class="trust">
+  <div class="container trust-inner">
+    <span data-i18n="trust1">✓ آلاف المنتجات</span>
+    <span data-i18n="trust2">✓ تطبيقات رقمية</span>
+    <span data-i18n="trust3">✓ دعم على مدار الساعة</span>
+    <span data-i18n="trust4">✓ سياسة استرجاع عادلة</span>
+    <span data-i18n="trust5">✓ تغطية لكل ليبيا</span>
+  </div>
+</div>
+
+<!-- ============ FEATURES ============ -->
+<section class="section" id="features">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="eyebrow" data-i18n="feat.eyebrow">لماذا تزويد</span>
+      <h2 class="sec-title" data-i18n="feat.title">تجربة رقمية تستحق الثقة</h2>
+      <p class="sec-sub" data-i18n="feat.sub">صُممت منصة تزويد وتطبيقاتنا لتمنحك أماناً وسهولة وسرعة في كل خطوة — من اختيار المنتج حتى استلامه.</p>
+    </div>
+    <div class="features-grid">
+      <article class="feature reveal" data-d="1">
+        <div class="f-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3 data-i18n="feat.1t">حماية ودفع آمن</h3>
+        <p data-i18n="feat.1p">عمليات دفع مشفّرة عبر مزوّدي خدمات دفع معتمدين، دون تخزين بياناتك المصرفية الحساسة على أنظمتنا.</p>
+      </article>
+      <article class="feature reveal" data-d="2">
+        <div class="f-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h11v8H3zM14 10h4l3 3v2h-7z" stroke-linejoin="round"/><circle cx="7" cy="18" r="1.8"/><circle cx="17" cy="18" r="1.8"/></svg></div>
+        <h3 data-i18n="feat.2t">توصيل سريع وموثوق</h3>
+        <p data-i18n="feat.2p">شبكة توصيل تغطي مختلف المدن الليبية، مع تتبّع لحالة طلبك خطوة بخطوة حتى يصل إلى بابك.</p>
+      </article>
+      <article class="feature reveal" data-d="3">
+        <div class="f-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2" stroke-linecap="round"/></svg></div>
+        <h3 data-i18n="feat.3t">تطبيقات متكاملة</h3>
+        <p data-i18n="feat.3p">نطوّر تطبيقات رقمية سهلة وسريعة تخدم التجارة والتوزيع، بتجربة استخدام سلسة على الجوال والحاسوب.</p>
+      </article>
+      <article class="feature reveal" data-d="1">
+        <div class="f-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z" stroke-linejoin="round"/></svg></div>
+        <h3 data-i18n="feat.4t">دعم على مدار الساعة</h3>
+        <p data-i18n="feat.4p">فريق خدمة عملاء جاهز للرد على استفساراتك وحل مشاكلك بسرعة عبر قنوات تواصل متعددة.</p>
+      </article>
+      <article class="feature reveal" data-d="2">
+        <div class="f-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3 data-i18n="feat.5t">منتجات أصلية مضمونة</h3>
+        <p data-i18n="feat.5p">نتحقق من جودة ومصدر المنتجات المعروضة، مع سياسة استبدال واسترجاع واضحة تحفظ حقك.</p>
+      </article>
+      <article class="feature reveal" data-d="3">
+        <div class="f-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 3h5v5M21 3l-8 8M8 21H3v-5M3 21l8-8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3 data-i18n="feat.6t">عروض وخصومات دائمة</h3>
+        <p data-i18n="feat.6p">حملات ترويجية وعروض حصرية على مدار العام، لتحصل على أفضل قيمة مقابل كل عملية شراء.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ APPS ============ -->
+<section class="section" id="apps" style="background:var(--green-mist)">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="eyebrow" data-i18n="apps.eyebrow">تطبيقاتنا</span>
+      <h2 class="sec-title" data-i18n="apps.title">تطبيقات من تزويد</h2>
+      <p class="sec-sub" data-i18n="apps.sub">تزويد شركة برمجية تطوّر تطبيقات رقمية متكاملة في مجال التجارة والتوزيع. إليك أبرز تطبيقاتنا في نفس الفئة.</p>
+    </div>
+    <div class="companies">
+      <!-- تطبيق تزويد -->
+      <article class="company-card reveal" data-d="1">
+        <span class="accent-bar" style="background:#40916c"></span>
+        <div class="company-logo-box"><img src="assets/logo.png" alt="تطبيق تزويد"></div>
+        <span class="sector" data-i18n="apps.tzweed.sector">التجارة الإلكترونية</span>
+        <h3 data-i18n="apps.tzweed.name">تطبيق تزويد</h3>
+        <p data-i18n="apps.tzweed.desc">تطبيق التسوّق الإلكتروني من تزويد — آلاف المنتجات الأصلية، دفع آمن، وتوصيل سريع إلى باب منزلك في جميع أنحاء ليبيا.</p>
+        <a href="#contact" class="company-link"><span data-i18n="apps.tzweed.link">اطلب التطبيق</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M19 12H5M11 6l-6 6 6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </article>
+
+      <!-- توزيع Tawzee -->
+      <article class="company-card reveal" data-d="2">
+        <span class="accent-bar" style="background:#f4a300"></span>
+        <div class="company-logo-box"><img src="assets/companies/tawzee.png" alt="توزيع Tawzee" data-logo-tawzee></div>
+        <span class="sector" data-i18n="apps.tawzee.sector">التوزيع واللوجستيات</span>
+        <h3 data-i18n="apps.tawzee.name">توزيع Tawzee</h3>
+        <p data-i18n="apps.tawzee.desc">تطبيق متخصص في إدارة التوزيع وسلاسل الإمداد، يربط المورّدين ونقاط البيع لضمان وصول المنتجات بكفاءة وموثوقية.</p>
+        <a href="#contact" class="company-link"><span data-i18n="apps.tawzee.link">تعرّف على التطبيق</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M19 12H5M11 6l-6 6 6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </article>
+
+      <!-- فيسع Feesaa -->
+      <article class="company-card reveal" data-d="3">
+        <span class="accent-bar" style="background:#f2c200"></span>
+        <div class="company-logo-box"><img src="assets/companies/feesaa.png" alt="فيسع Feesaa"></div>
+        <span class="sector" data-i18n="apps.feesaa.sector">التوصيل السريع</span>
+        <h3 data-i18n="apps.feesaa.name">فيسع Feesaa</h3>
+        <p data-i18n="apps.feesaa.desc">تطبيق توصيل سريع من تزويد يوصّل طلباتك واحتياجاتك اليومية إلى بابك بسرعة وموثوقية عبر شبكة مندوبين متكاملة.</p>
+        <a href="#contact" class="company-link"><span data-i18n="apps.feesaa.link">تعرّف على التطبيق</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M19 12H5M11 6l-6 6 6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="container split">
+    <div class="about-visual reveal">
+      <div class="about-img logo-frame">
+        <img src="assets/logo.png" alt="تزويد" class="logo-big">
+      </div>
+      <div class="about-stat">
+        <b data-count="9" data-suffix="">0</b>
+        <span data-i18n="about.stat">أعوام من<br>النجاح والثقة</span>
+      </div>
+    </div>
+    <div class="about-copy reveal" data-d="2">
+      <span class="eyebrow" data-i18n="about.eyebrow">من نحن</span>
+      <h2 class="sec-title" data-i18n="about.title">شركة تزويد للتجارة الإلكترونية</h2>
+      <p style="margin-top:1rem" data-i18n="about.p">تعتمد الشركة على توظيف التكنولوجيا في تطوير سلسلة التوريد، من خلال توفير <strong>كتالوجات رقمية</strong> للمنتجات، وإدارة الطلبات والأسعار والكميات، ومتابعة المبيعات والعملاء، بما يساعد الشركات على تقليل الوقت والجهد وتحسين إدارة المشتريات والمخزون.</p>
+      <div class="vision-box">
+        <b data-i18n="about.vision.label">رؤيتنا</b>
+        <span data-i18n="about.vision.text">تزويد منصة رائدة في مجال التجارة الإلكترونية B2B للقطاع الغذائي في ليبيا؛ نُنشئ منظومة تجارية رقمية تربط مختلف أطراف سلسلة الإمداد وتمنحهم تجربة شراء وبيع أكثر سهولة وشفافية.</span>
+      </div>
+      <div class="hero-actions" style="margin-top:1.8rem">
+        <a href="#apps" class="btn btn-primary" data-i18n="about.cta1">استكشف تطبيقاتنا</a>
+        <a href="#contact" class="btn btn-ghost" data-i18n="about.cta2">تواصل معنا</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS ============ -->
+<section class="section stats">
+  <div class="container stats-grid">
+    <div class="stat reveal" data-d="1"><b><span data-count="50000" data-suffix="">0</span><span class="plus">+</span></b><span data-i18n="stat1">منتج متنوّع</span></div>
+    <div class="stat reveal" data-d="2"><b><span data-count="3" data-suffix="">0</span><span class="plus">+</span></b><span data-i18n="stat2">تطبيقات رقمية</span></div>
+    <div class="stat reveal" data-d="3"><b><span data-count="30" data-suffix="">0</span><span class="plus">+</span></b><span data-i18n="stat3">مدينة نغطّيها</span></div>
+    <div class="stat reveal" data-d="4"><b><span data-count="98" data-suffix="">0</span><span class="plus">%</span></b><span data-i18n="stat4">رضا العملاء</span></div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="section" id="how">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="eyebrow" data-i18n="how.eyebrow">كيف نعمل</span>
+      <h2 class="sec-title" data-i18n="how.title">تسوّق في أربع خطوات بسيطة</h2>
+      <p class="sec-sub" data-i18n="how.sub">من تصفّح المنتجات حتى استلام طلبك — رحلة شراء واضحة وسريعة عبر تطبيق تزويد.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal" data-d="1"><div class="num"></div><h3 data-i18n="how.1t">تصفّح واختر</h3><p data-i18n="how.1p">استكشف آلاف المنتجات وقارن بينها بسهولة واختر ما يناسبك.</p></div>
+      <div class="step reveal" data-d="2"><div class="num"></div><h3 data-i18n="how.2t">أضِف إلى السلة</h3><p data-i18n="how.2p">أضف منتجاتك إلى السلة وراجع طلبك قبل إتمام الشراء.</p></div>
+      <div class="step reveal" data-d="3"><div class="num"></div><h3 data-i18n="how.3t">ادفع بأمان</h3><p data-i18n="how.3p">أكمل الدفع عبر وسائل دفع آمنة ومعتمدة بكل ثقة.</p></div>
+      <div class="step reveal" data-d="4"><div class="num"></div><h3 data-i18n="how.4t">استلم طلبك</h3><p data-i18n="how.4p">نوصّل طلبك إلى باب منزلك ونتيح لك تتبّعه خطوة بخطوة.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CATEGORIES ============ -->
+<section class="section" id="categories" style="background:var(--green-mist)">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="eyebrow" data-i18n="cat.eyebrow">الأقسام</span>
+      <h2 class="sec-title" data-i18n="cat.title">تسوّق حسب الفئة</h2>
+      <p class="sec-sub" data-i18n="cat.sub">تشكيلة واسعة من الأقسام تلبي احتياجات كل فرد في العائلة.</p>
+    </div>
+    <div class="cats">
+      <div class="cat reveal" data-d="1"><div class="c-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 21v-4h6v4" stroke-linejoin="round"/></svg></div><span data-i18n="cat.1">إلكترونيات</span></div>
+      <div class="cat reveal" data-d="1"><div class="c-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3l2 4h8l2-4M4 7h16l-1 13H5z" stroke-linejoin="round"/></svg></div><span data-i18n="cat.2">أزياء</span></div>
+      <div class="cat reveal" data-d="2"><div class="c-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10l9-7 9 7v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" stroke-linejoin="round"/></svg></div><span data-i18n="cat.3">المنزل</span></div>
+      <div class="cat reveal" data-d="2"><div class="c-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.5-6 8-6s8 2 8 6" stroke-linecap="round"/></svg></div><span data-i18n="cat.4">الجمال</span></div>
+      <div class="cat reveal" data-d="3"><div class="c-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M3 8h18M5 8l1 12h12l1-12" stroke-linejoin="round"/></svg></div><span data-i18n="cat.5">البقالة</span></div>
+      <div class="cat reveal" data-d="3"><div class="c-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round"/></svg></div><span data-i18n="cat.6">المزيد</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="section">
+  <div class="container">
+    <div class="cta reveal">
+      <h2 data-i18n="cta.title">جاهز لتجربة رقمية أفضل؟</h2>
+      <p data-i18n="cta.text">انضم إلى آلاف العملاء الذين يثقون في تزويد وتطبيقاتها لتلبية احتياجاتهم اليومية بأمان وسهولة.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-light" data-i18n="cta.b1">أنشئ حسابك مجاناً</a>
+        <a href="#apps" class="btn btn-outline-light" data-i18n="cta.b2">استكشف تطبيقاتنا</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section" id="contact" style="background:var(--green-mist)">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="eyebrow" data-i18n="contact.eyebrow">تواصل معنا</span>
+      <h2 class="sec-title" data-i18n="contact.title">نحن هنا لمساعدتك</h2>
+      <p class="sec-sub" data-i18n="contact.sub">لأي استفسار أو شكوى أو اقتراح، فريقنا جاهز للرد عليك في أقرب وقت.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-cards reveal">
+        <a class="contact-card" href="mailto:info@tzweed.com">
+          <span class="cc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <div><b data-i18n="contact.email">البريد الإلكتروني</b><span dir="ltr">info@tzweed.com</span></div>
+        </a>
+        <a class="contact-card" href="tel:0222223670">
+          <span class="cc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h4l2 5-3 2a12 12 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2z" stroke-linejoin="round"/></svg></span>
+          <div><b data-i18n="contact.phone">رقم الهاتف</b><span dir="ltr">0222223670</span></div>
+        </a>
+        <div class="contact-card">
+          <span class="cc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+          <div><b data-i18n="contact.addr">العنوان</b><span data-i18n="contact.addrv">جنزور ك م 6 — طرابلس، ليبيا</span></div>
+        </div>
+        <a class="contact-card" href="https://www.tzweed.com">
+          <span class="cc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18" stroke-linecap="round"/></svg></span>
+          <div><b data-i18n="contact.web">الموقع الإلكتروني</b><span dir="ltr">www.tzweed.com</span></div>
+        </a>
+      </div>
+
+      <form class="contact-form reveal" data-d="2" id="contactForm">
+        <div class="field">
+          <label for="name" data-i18n="contact.f.name">الاسم الكامل</label>
+          <input id="name" name="name" type="text" placeholder="اكتب اسمك هنا" data-i18n-ph="contact.f.namep" required>
+        </div>
+        <div class="field">
+          <label for="email" data-i18n="contact.f.email">البريد الإلكتروني</label>
+          <input id="email" name="email" type="email" placeholder="example@email.com" required>
+        </div>
+        <div class="field">
+          <label for="msg" data-i18n="contact.f.msg">رسالتك</label>
+          <textarea id="msg" name="msg" placeholder="كيف يمكننا مساعدتك؟" data-i18n-ph="contact.f.msgp" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center" data-i18n="contact.f.send">إرسال الرسالة</button>
+        <p class="form-note" data-i18n="contact.f.note">بإرسالك هذا النموذج فإنك توافق على <a href="privacy.html" style="color:var(--green-700);font-weight:700">سياسة الخصوصية</a> الخاصة بنا.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <img src="assets/logo.png" alt="تزويد Tzweed" class="footer-logo">
+        </a>
+        <p data-i18n="footer.about">تزويد — شركة تجارة إلكترونية وبرمجيات، نُدير منصة تسوّق موثوقة ونطوّر تطبيقات رقمية متكاملة في جميع أنحاء ليبيا.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="فيسبوك"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-1.7 0-3 1.3-3 3v2H9v3h2v6h3v-6h2.5l.5-3H14v-1.5c0-.6.4-.5 0 0z"/></svg></a>
+          <a href="#" aria-label="انستغرام"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="واتساب"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.5A10 10 0 1 0 12 2zm0 2a8 8 0 0 1 6.3 12.9c-.2.3-1.4 2.5-4.3 2.5a8 8 0 0 1-4-1l-.4-.2-2.5.8.8-2.4-.2-.4A8 8 0 0 1 12 4zm4.4 10.3c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.1-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.1-.2 0-.4.1-.5l.4-.5.2-.4v-.4l-.8-1.8c-.2-.4-.4-.4-.5-.4H8c-.2 0-.5.1-.7.3-.3.3-.9.9-.9 2.1s.9 2.5 1 2.6c.1.2 1.8 2.9 4.5 4 .6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.links">روابط سريعة</h4>
+        <ul>
+          <li><a href="#features" data-i18n="nav.features">لماذا تزويد</a></li>
+          <li><a href="#apps" data-i18n="nav.apps">تطبيقاتنا</a></li>
+          <li><a href="#about" data-i18n="nav.about">من نحن</a></li>
+          <li><a href="#categories" data-i18n="nav.categories">الأقسام</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">تواصل معنا</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.apps">تطبيقاتنا</h4>
+        <ul>
+          <li><a href="#apps" data-i18n="apps.tzweed.name">تطبيق تزويد</a></li>
+          <li><a href="#apps" data-i18n="apps.tawzee.name">توزيع Tawzee</a></li>
+          <li><a href="#apps" data-i18n="apps.feesaa.name">فيسع Feesaa</a></li>
+          <li><a href="terms.html" data-i18n="footer.terms">الشروط والأحكام</a></li>
+          <li><a href="privacy.html" data-i18n="footer.privacy">سياسة الخصوصية</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.contact">معلومات التواصل</h4>
+        <ul class="footer-contact">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6" stroke-linecap="round"/></svg> <span dir="ltr">info@tzweed.com</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h4l2 5-3 2a12 12 0 0 0 6 6l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2z" stroke-linejoin="round"/></svg> <span dir="ltr">0222223670</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5"/></svg> <span data-i18n="contact.addrv">جنزور ك م 6، طرابلس، ليبيا</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> <span data-i18n="footer.rights">شركة تزويد — جميع الحقوق محفوظة.</span></span>
+      <span><a href="terms.html" data-i18n="footer.terms">الشروط والأحكام</a> · <a href="privacy.html" data-i18n="footer.privacy">سياسة الخصوصية</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/i18n.js"></script>
+</body>
+</html>

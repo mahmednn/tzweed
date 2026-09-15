@@ -1,0 +1,13 @@
+# deployment packages (not needed on host)
+*.zip
+
+# source design files (not part of the live site)
+*.pdf
+WhatsApp Image*.jpeg
+assets/logo.jpeg
+assets/logo-mark.svg
+
+# OS junk
+Thumbs.db
+.DS_Store
+desktop.ini
