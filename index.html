@@ -27,7 +27,25 @@
       <a href="#contact" data-i18n="nav.contact">تواصل معنا</a>
     </nav>
     <div class="nav-cta">
-      <button id="langToggle" class="lang-toggle" aria-label="Switch language">EN</button>
+      <div class="lang-switch">
+        <button class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false" aria-label="Language">
+          <svg class="globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18" stroke-linecap="round"/></svg>
+          <span id="langCurrent">العربية</span>
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="lang-menu" id="langMenu" role="menu">
+          <button class="lang-opt" data-lang="ar" role="menuitem">
+            <span class="lo-name">العربية</span>
+            <span class="lo-code">AR</span>
+            <svg class="lo-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <button class="lang-opt" data-lang="en" role="menuitem">
+            <span class="lo-name">English</span>
+            <span class="lo-code">EN</span>
+            <svg class="lo-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
       <a href="#contact" class="btn btn-primary" data-i18n="nav.start">ابدأ الآن</a>
       <button class="nav-toggle" aria-label="القائمة"><span></span><span></span><span></span></button>
     </div>

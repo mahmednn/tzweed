@@ -166,9 +166,12 @@
     document.querySelectorAll("[data-logo-tawzee]").forEach((img) => {
       img.src = lang === "en" ? "assets/companies/tawzee-en.png" : "assets/companies/tawzee.png";
     });
-    // toggle button label shows the OTHER language
-    const btn = document.getElementById("langToggle");
-    if (btn) btn.textContent = lang === "ar" ? "EN" : "ع";
+    // dropdown: current label + active option
+    const cur = document.getElementById("langCurrent");
+    if (cur) cur.textContent = lang === "ar" ? "العربية" : "English";
+    document.querySelectorAll(".lang-opt").forEach((o) =>
+      o.classList.toggle("active", o.getAttribute("data-lang") === lang)
+    );
 
     try { localStorage.setItem("tzweed_lang", lang); } catch (e) {}
   }
@@ -177,11 +180,21 @@
     let lang = "ar";
     try { lang = localStorage.getItem("tzweed_lang") || "ar"; } catch (e) {}
     apply(lang);
-    const btn = document.getElementById("langToggle");
-    if (btn) btn.addEventListener("click", () => {
-      const cur = document.documentElement.getAttribute("lang") || "ar";
-      apply(cur === "ar" ? "en" : "ar");
+
+    const sw = document.querySelector(".lang-switch");
+    const btn = document.getElementById("langBtn");
+    const close = () => { if (sw) sw.classList.remove("open"); if (btn) btn.setAttribute("aria-expanded", "false"); };
+    const open = () => { if (sw) sw.classList.add("open"); if (btn) btn.setAttribute("aria-expanded", "true"); };
+
+    if (btn) btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      sw.classList.contains("open") ? close() : open();
     });
+    document.querySelectorAll(".lang-opt").forEach((o) =>
+      o.addEventListener("click", () => { apply(o.getAttribute("data-lang")); close(); })
+    );
+    document.addEventListener("click", (e) => { if (sw && !sw.contains(e.target)) close(); });
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape") close(); });
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
