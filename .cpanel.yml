@@ -5,6 +5,7 @@ deployment:
     - /bin/cp -f index.html $DEPLOYPATH/
     - /bin/cp -f terms.html $DEPLOYPATH/
     - /bin/cp -f privacy.html $DEPLOYPATH/
+    - /bin/cp -f deploy.php $DEPLOYPATH/
     - /bin/cp -Rf css $DEPLOYPATH/
     - /bin/cp -Rf js $DEPLOYPATH/
     - /bin/cp -Rf assets $DEPLOYPATH/
