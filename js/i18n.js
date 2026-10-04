@@ -68,7 +68,7 @@
     "apps.tawzee.sector": { ar: "التوزيع واللوجستيات", en: "Distribution & Logistics" },
     "apps.tawzee.name":   { ar: "توزيع Tawzee", en: "Tawzee" },
     "apps.tawzee.desc":   { ar: "تطبيق متخصص في إدارة التوزيع وسلاسل الإمداد، يربط المورّدين ونقاط البيع لضمان وصول المنتجات بكفاءة وموثوقية.", en: "An app specialized in managing distribution and supply chains, connecting suppliers and points of sale to deliver products efficiently and reliably." },
-    "apps.tawzee.link":   { ar: "تعرّف على التطبيق", en: "Learn more" },
+    "apps.tawzee.link":   { ar: "زيارة الموقع", en: "Visit website" },
     "apps.feesaa.sector": { ar: "التوصيل السريع", en: "Fast Delivery" },
     "apps.feesaa.name":   { ar: "فيسع Feesaa", en: "Feesaa" },
     "apps.feesaa.desc":   { ar: "تطبيق توصيل سريع من تزويد يوصّل طلباتك واحتياجاتك اليومية إلى بابك بسرعة وموثوقية عبر شبكة مندوبين متكاملة.", en: "A fast‑delivery app by Tzweed that brings your orders and daily needs to your door quickly and reliably through an integrated courier network." },
